@@ -1,0 +1,60 @@
+<style>
+    .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+        color: #A39068;
+    }
+    .bg-brown {
+        background-color: #343a40;
+    }
+    .bg-gold {
+        background-color: #AD985F;
+    }
+    .nav-link, .navbar-brand, .text-gold{
+        color: #A39068;
+    }
+    .nav-link, .f-nav {
+        font-family: 'Poppins', sans-serif;
+    }
+    .navbar-brand, .f-brand {
+        font-family: 'Lora', serif;
+    }
+    .nav-link:hover {
+        color: #ffffff;
+    }
+    .navbar-brand:hover {
+        color: #A39068;
+    }
+
+</style>
+
+<header>
+    <div style="text-align: center" class="nav-container-fluid text-light">
+        <nav class="navbar navbar-expand-lg bg-brown py-3 w-100">
+            <div class="container px-5">
+                <a class="navbar-brand fs-4" href="./">
+                    ALL VINTAGE
+                </a>
+                <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars fs-3 text-gold"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" id="carta" aria-current="page" href="nosotros.jsp">Nosotros</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" id="galeria" aria-current="page" href="productos.jsp">Catálogo</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" id="about_us" aria-current="page" href="contacto.jsp">Contacto</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" id="about_us" aria-current="page" href="login.jsp">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

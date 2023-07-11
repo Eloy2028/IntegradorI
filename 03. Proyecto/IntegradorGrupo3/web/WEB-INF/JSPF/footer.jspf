@@ -1,0 +1,36 @@
+<footer class="container-fluid bg-brown text-light ">
+    <div class="row">
+        <div style="text-align: center" class="col-12 col-sm-6 col-md-3 mt-3">
+            <h4 class="text-warning" >Navegador del sitio</h4>
+            <p><a class="nav-link" href="index.jsp">Inicio</a></p>
+            <p><a class="nav-link" href="nosotros.jsp">Nosotros</a></p>
+            <p><a class="nav-link" href="productos.jsp">Productos</a></p>
+            <p><a class="nav-link" href="contacto.jsp">Contacto</a></p>
+            <p><a class="nav-link" href="login.jsp">Login</a></p>
+        </div>
+        <div style="text-align: center" class="col-12 col-sm-6 col-md-3 mt-3">
+            <h4 class="text-warning">Servicios</h4>
+            <p><a class="nav-link" href="#">Para Hombres</a></p>
+            <p><a class="nav-link" href="#">Para Mujeres</a></p>
+        </div>
+        <div style="text-align: center" class="col-12 col-sm-6 col-md-3 mt-3 mb-3">
+            <h4 class="text-warning">Contacto</h4>
+            <p><a class="nav-link" href="#">Teléfonos</a></p>
+            <p><a class="nav-link" href="#">Correo</a></p>
+            <p><a class="nav-link" href="#">Dirección</a></p>
+            <p><a class="nav-link" href="#">Gmail</a></p>
+        </div>
+        <div style="text-align: center" class="col-12 col-sm-6 col-md-3 mt-3 mb-3">
+            <h2 class="text-center"><strong><u>ALL VINTAGE</u></strong></h2>
+            <hr>
+            <h3>Encuéntranos también en nuestras redes sociales oficiales:</h3>
+            <p class="text-center lead fs-2">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-messenger"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-telegram"></i>
+            </p>
+        </div>
+    </div>
+</footer>
