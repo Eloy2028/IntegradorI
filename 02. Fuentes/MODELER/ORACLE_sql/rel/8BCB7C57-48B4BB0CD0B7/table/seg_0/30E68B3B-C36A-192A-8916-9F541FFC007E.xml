@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30E68B3B-C36A-192A-8916-9F541FFC007E" name="CARRITO">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:00:28 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo_carrito" id="D924D539-57A0-D101-E930-29B935FAB0BC">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:00:43 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="C73F16CF-DC6C-DB37-C3E8-B61DBEC165D5">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:00:56 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_id_cliente" id="6173E934-82B4-DA72-64B3-E30ED027593B">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:01:17 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="880379E9-2D5F-524E-EBAC-BC39A9C8F86C" referredColumn="525C1482-73B7-8A8B-DC96-F527661BC5B4"/>
+</associations>
+</Column>
+<Column name="STOCK_codigo_stock" id="F37D493D-1081-CED2-6929-F6E01CA56978">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:05 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="363DBB15-FCF5-11F5-D0AF-0531D24E55A0" referredColumn="67755ADF-1A95-9D39-C443-787F8B16D7A9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB7941DC-D8DC-1664-25CC-C6628E1DF2E2" name="CARRITO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:00:43 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D924D539-57A0-D101-E930-29B935FAB0BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="609264F5-5073-8C60-DDFD-8140A3516024" name="CARRITO_CLIENTE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:01:17 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6173E934-82B4-DA72-64B3-E30ED027593B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F91BB2F-3ACF-67EA-48C5-1B5C697225C8" name="CARRITO_STOCK_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:05 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F37D493D-1081-CED2-6929-F6E01CA56978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

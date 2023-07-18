@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="66545F3A-D599-6379-8C97-2AF71A900B3A" containerWithKeyObject="5D8D9AF2-7A6A-1AD5-D12E-0FFC244059D8" localFKIndex="DF08D706-893B-9CEA-599E-F1F681E39A4C" name="STOCK_ENTREGA_DETALLE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:45 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<referredTableLongName>ENTREGA_DETALLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>09E4141A-58B7-BFBB-BFE8-E640F906E8B2</referredTableID>
+<keyObject>574422DD-C00E-FABC-520A-EA0283102E05</keyObject>
+<referredKeyID>574422DD-C00E-FABC-520A-EA0283102E05</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_entrega_detalle</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

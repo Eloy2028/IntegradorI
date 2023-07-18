@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7FC7F770-A548-827A-F8FB-F83577C19164" name="EMPLEADO">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:22:15 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="F7BDD1B8-FDB8-E5CF-E5F2-08EB675B22D7">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:22:42 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C5D87CA2-F153-9E90-28EC-B39E30ACDA7D">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:23:17 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_paterno" id="BB858F52-5E58-44AB-CECA-FD304FCF84C1">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:23:41 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido_materno" id="1C0ADA7D-F652-72DB-BF48-4C4C0B2B90B9">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:24:02 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="522C4554-13B3-DDC2-34CB-E7363A8B8DCB">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:24:36 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="edad" id="7B109EE3-D956-2FD6-53C9-691829E123AE">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:24:52 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT049</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="806F2BA3-F9E8-A8DB-FC35-E7BE32BF8554">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:25:05 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="608E0B12-E282-B98C-A9C4-1B6BA332E32C">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:25:23 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_creacion" id="8A09A040-1EAC-A574-8A88-1304DB1650AF">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:26:25 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="E1B3E6E3-73B1-0875-06B3-E8F493E8A5EC">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:26:45 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_mod" id="E40F773C-0B2A-5D2C-0C0B-0A67AB088F33">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:27:08 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_mod" id="BAB189E5-07EE-EDC1-DFAB-C0C1FB7C9AEB">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:50:34 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIENDA_ruc" id="A9EACF4E-BD43-2C1A-AE8B-37A39DFC48B7">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:48 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="073E48A8-7B53-4E72-BE56-467709FDF7E0" referredColumn="537A6054-E2CB-8B8B-A65A-2EFB5BE14A33"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="212E2D60-9276-2546-B7B5-38C0FE8F5980" name="PERSONA_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:22:47 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7BDD1B8-FDB8-E5CF-E5F2-08EB675B22D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0157AAB1-F8FB-9B65-D8C0-2AB47ED1061F" name="EMPLEADO_TIENDA_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:48 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9EACF4E-BD43-2C1A-AE8B-37A39DFC48B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

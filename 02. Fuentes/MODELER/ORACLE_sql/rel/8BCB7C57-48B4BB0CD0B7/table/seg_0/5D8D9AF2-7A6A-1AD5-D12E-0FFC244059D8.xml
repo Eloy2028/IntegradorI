@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D8D9AF2-7A6A-1AD5-D12E-0FFC244059D8" name="STOCK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:54:37 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo_stock" id="67755ADF-1A95-9D39-C443-787F8B16D7A9">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:55:10 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="3CF1BEEE-CDC5-3199-BA21-448BAD3B5ACB">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:55:22 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imagen" id="EC4C92B2-D635-ECEA-CE7F-426EDDB9828E">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:55:54 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria" id="181DCAF8-18EE-4C01-5604-2897E3AEF0AD">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:56:19 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="74F2A830-46B9-B404-2373-69CD23E63545">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:56:30 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADO_id_persona" id="7B539AB8-5F21-6738-D3F0-4F52BD753BCF">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:38 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="283814E7-D413-E5D4-D52C-498BA2D24EE4" referredColumn="F7BDD1B8-FDB8-E5CF-E5F2-08EB675B22D7"/>
+</associations>
+</Column>
+<Column name="ENTREGA_DETALLE_id_entrega_detalle" id="EE0390CC-8DBF-0EA9-4095-CD01BB0378A5">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:45 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66545F3A-D599-6379-8C97-2AF71A900B3A" referredColumn="8B8DC124-4DAE-FC14-2D1E-3E49CA72C2B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C449BAD-98A8-DF99-9E7E-5856614CA4ED" name="STOCK_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:55:10 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67755ADF-1A95-9D39-C443-787F8B16D7A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F760834-8402-2995-0A98-797CB324B558" name="STOCK_EMPLEADO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:38 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B539AB8-5F21-6738-D3F0-4F52BD753BCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF08D706-893B-9CEA-599E-F1F681E39A4C" name="STOCK_ENTREGA_DETALLE_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:45 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE0390CC-8DBF-0EA9-4095-CD01BB0378A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

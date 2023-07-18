@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB1E402B-73AB-30B4-3404-5DB6AE3B0236" name="PEDIDO">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:31:52 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pedido" id="60558A6C-70F3-26AA-441D-CC4B18661BE1">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:33:32 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>5 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nro_pedido" id="AC82FA45-AD9E-1BEE-35EB-5E8E22B8CE3B">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:34:00 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="6E6E3A3F-26E2-A79B-637A-9C028D0FB602">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:35:27 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pedido_fecha" id="1646738D-C233-9003-5EC1-49A21FCC37D1">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:36:24 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pedido_monto" id="6DBEC028-09CE-B8E3-37EF-DFC58AE18426">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:37:05 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_entrega_detalle" id="8A3C8F0D-E43C-393C-A463-BF86BA4F1FC0">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:37:24 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_creacion" id="8B3B6D22-47E9-0ED1-4254-012F60E102CA">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:38:39 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="FC245A2F-E607-AAE4-2FA2-CC3B70010F3A">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:38:49 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_mod" id="14A1639D-4217-FB58-0FA6-CE804E162981">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:38:52 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_mod" id="EEE8740B-0707-518A-90FF-B39E4E3CE770">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:53:19 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADO_id_persona" id="A85723D7-39DF-1F3D-0417-28809C8B83A6">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:10 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAE89123-13F3-C918-9E8D-2D331A948108" referredColumn="F7BDD1B8-FDB8-E5CF-E5F2-08EB675B22D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3656EA62-EED5-96E2-1C5C-35126295055D" name="PEDIDO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:33:32 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60558A6C-70F3-26AA-441D-CC4B18661BE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11C53836-B7C5-8517-1D65-1826D7881BEB" name="PEDIDO_EMPLEADO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:10 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A85723D7-39DF-1F3D-0417-28809C8B83A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

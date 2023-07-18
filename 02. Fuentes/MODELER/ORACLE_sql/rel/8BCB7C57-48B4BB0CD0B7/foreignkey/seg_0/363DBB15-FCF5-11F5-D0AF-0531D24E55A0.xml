@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="363DBB15-FCF5-11F5-D0AF-0531D24E55A0" containerWithKeyObject="30E68B3B-C36A-192A-8916-9F541FFC007E" localFKIndex="2F91BB2F-3ACF-67EA-48C5-1B5C697225C8" name="CARRITO_STOCK_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:05 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<referredTableLongName>STOCK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5D8D9AF2-7A6A-1AD5-D12E-0FFC244059D8</referredTableID>
+<keyObject>4C449BAD-98A8-DF99-9E7E-5856614CA4ED</keyObject>
+<referredKeyID>4C449BAD-98A8-DF99-9E7E-5856614CA4ED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo_stock</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

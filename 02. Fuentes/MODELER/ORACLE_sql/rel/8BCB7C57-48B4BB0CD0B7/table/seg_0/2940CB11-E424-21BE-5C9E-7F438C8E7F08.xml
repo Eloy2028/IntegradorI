@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2940CB11-E424-21BE-5C9E-7F438C8E7F08" name="TIENDA">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:29 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ruc" id="537A6054-E2CB-8B8B-A65A-2EFB5BE14A33">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:40 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="CB000383-8CBB-FC73-0CA4-7BD39CCE26DF">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:51 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="provincia" id="7FF97B09-36BF-A929-2487-EAFD3E98D819">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:17 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="distrito" id="4475E971-9851-C148-7070-E7CCC6DB9825">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:29 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARRITO_codigo_carrito" id="A8288861-08C0-9430-016D-608855863D09">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:42 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="493F004B-F3F6-4C64-6107-A4E2E55FD8CB" referredColumn="D924D539-57A0-D101-E930-29B935FAB0BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B93E8F14-2FD1-EDB9-D50A-EDCF36CB67CF" name="TIENDA_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:03:43 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="537A6054-E2CB-8B8B-A65A-2EFB5BE14A33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13041431-928E-A22D-3959-93BBB817DC59" name="TIENDA_CARRITO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:42 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8288861-08C0-9430-016D-608855863D09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

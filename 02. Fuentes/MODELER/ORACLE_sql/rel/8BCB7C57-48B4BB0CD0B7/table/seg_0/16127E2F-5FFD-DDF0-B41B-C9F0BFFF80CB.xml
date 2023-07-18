@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16127E2F-5FFD-DDF0-B41B-C9F0BFFF80CB" name="CLIENTE">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:20:11 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cliente" id="525C1482-73B7-8A8B-DC96-F527661BC5B4">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:20:28 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dni_cliente" id="91B9E680-2A1F-008E-E39A-F36A1F36EC0D">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:21:08 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="FAD3D132-2F3D-F4BE-B917-E4524B207244">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:21:33 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_creacion" id="602B3A5F-FAA9-3033-B0E5-A8E112247873">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:21:45 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="616C2A23-A6B6-FA23-7A2F-AB28BA69DBCE">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:21:53 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_mod" id="CAA93F1D-DAE2-2C0D-1DB6-DF13AFB4ACEC">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:21:57 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_mod" id="E02F1090-E933-7974-8916-839F5993057D">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:52:46 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLEADO_id_persona" id="1F87E0BB-A2A0-2DD6-9FDB-848963868681">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:55 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E714853-0CDF-AA42-7E53-F15ADCF1C349" referredColumn="F7BDD1B8-FDB8-E5CF-E5F2-08EB675B22D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9127D7ED-44BF-0D1D-93C3-322124B0B493" name="CLIENTE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:20:30 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="525C1482-73B7-8A8B-DC96-F527661BC5B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3295516-7E10-901F-412A-F614B0F4A5FC" name="CLIENTE_EMPLEADO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:04:55 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F87E0BB-A2A0-2DD6-9FDB-848963868681"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

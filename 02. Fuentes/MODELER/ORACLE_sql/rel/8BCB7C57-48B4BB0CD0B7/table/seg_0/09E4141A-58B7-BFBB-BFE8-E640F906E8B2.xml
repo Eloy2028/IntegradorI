@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09E4141A-58B7-BFBB-BFE8-E640F906E8B2" name="ENTREGA_DETALLE">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:39:08 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_entrega_detalle" id="8B8DC124-4DAE-FC14-2D1E-3E49CA72C2B7">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:39:59 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entrega_detalle" id="91D6191F-152A-D0A9-2B8F-6CF3845D6FC7">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:40:11 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entrega_detalle_descripcion" id="E8BAE977-5001-B49A-3A38-ECEAEB26F9C0">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:41:13 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_entrega" id="E0E40AE3-57CF-A9BE-B204-F870629E63B3">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:42:12 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_creacion" id="340AB40F-FCC1-C0CF-ED3C-5344D2B6F850">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:42:39 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="5275E60D-7DB3-1F43-E35D-9F9DCB2867DE">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:44:22 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_mod" id="9F60FF59-86F6-7A57-A39C-F99FC58A57D6">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:44:36 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_mod" id="704F3E87-3B8F-7110-D5C1-12200B0430F2">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 03:53:58 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PEDIDO_id_pedido" id="A93B84D7-8939-C49B-6D8F-A32AA63613A3">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:30 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7EBAC89-0D16-9E95-7B91-7A55BEF4E523" referredColumn="60558A6C-70F3-26AA-441D-CC4B18661BE1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="574422DD-C00E-FABC-520A-EA0283102E05" name="ENTREGA_DETALLE_PK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-07 02:39:59 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B8DC124-4DAE-FC14-2D1E-3E49CA72C2B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91799271-6B6B-A92E-3911-8B349F6F3E91" name="ENTREGA_DETALLE_PEDIDO_FK">
+<createdBy>USER</createdBy>
+<createdTime>2023-07-18 04:02:30 UTC</createdTime>
+<ownerDesignName>ORACLE_sql</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A93B84D7-8939-C49B-6D8F-A32AA63613A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
