@@ -1,0 +1,116 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <!-- HEADER -->
+    <header>
+        <!-- MAIN HEADER -->
+        <div id="header">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="index.xhtml" class="logo">
+                                <img src="./img/log.png" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /LOGO -->
+
+                    <!-- SEARCH BAR -->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <select class="input-select">
+                                    <option value="0">Todo</option>
+                                    <ui:repeat value="#{categoriaBean.service.categoriaSel()}" var="cathead">
+                                        <option value="#{cathead.id}">#{cathead.nombre}</option>
+                                    </ui:repeat>>
+                                </select>
+                                <input class="input" placeholder="Busca aquí"/>
+                                <button class="search-btn">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /SEARCH BAR -->
+
+                    <!-- ACCOUNT -->
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+                            <!-- /Wishlist -->
+
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>Carrito</span>
+
+                                    <div class="qty">
+                                        <h:panelGroup id="carritoPanel">
+                                            #{carritoBean.productosEnCarrito.size()}
+                                        </h:panelGroup>
+                                    </div>
+                                </a>
+
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+
+                                        <h:panelGroup id="carritodropdown">
+                                            <ui:repeat value="#{carritoBean.productosEnCarrito}" var="productoEnCarrito">
+                                                <div class="product-widget">
+                                                    <div class="product-img">
+                                                        <img src="#{productoEnCarrito.producto.imagen}" alt=""/>
+                                                    </div>
+                                                    <div class="product-body">
+                                                        <h3 class="product-name"><a href="#">#{productoEnCarrito.producto.nombre}</a></h3>
+                                                        <h4 class="product-price"><span class="qty">#{productoEnCarrito.cantidad} x</span>S/ #{productoEnCarrito.producto.precio}</h4>
+                                                    </div>
+                                                    <button class="delete"><i class="fa fa-close"></i></button>
+                                                </div>
+                                            </ui:repeat>
+                                        </h:panelGroup>
+                                    </div>
+                                    <div class="cart-summary">
+                                        
+                                        <h:panelGroup id="carritoprice">
+                                            <small>#{carritoBean.productosEnCarrito.size()} Item(s) selected</small>
+                                            <h5>SUBTOTAL: S/ #{carritoBean.calcularSubtotal()}</h5>
+                                        </h:panelGroup>
+                                    </div>
+                                    <div class="cart-btns">
+                                        <a href="checkout.xhtml">Ver Carrito</a>
+                                        <a href="checkout.xhtml">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Wishlist -->
+                            <div>
+                                <a href="login.xhtml">
+                                    <i class="fa fa-user"></i>
+                                    <span>Iniciar Sesion</span>
+                                </a>
+                            </div>
+                            <!-- Menu Toogle -->
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                            <!-- /Menu Toogle -->
+                        </div>
+                    </div>
+                    <!-- /ACCOUNT -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- /MAIN HEADER -->
+    </header>
+    <!-- /HEADER -->
+</ui:composition>

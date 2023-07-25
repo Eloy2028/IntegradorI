@@ -1,0 +1,125 @@
+<ui:composition template="/WEB-INF/templates/layout.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <ui:param name="title" value="Nosotros" />
+    <ui:define name="content">
+
+
+        
+        <h:panelGroup id="mensaje" rendered="#{not empty contactoBean.service.mensaje}">
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Enviado correctamente',
+                    text: '#{contactoBean.service.mensaje}'
+                });
+            </script>
+        </h:panelGroup>
+
+        <!-- BREADCRUMB -->
+        <div id="breadcrumb" class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="breadcrumb-header">Nosotros</h3>
+                        <ul class="breadcrumb-tree">
+                            <li><a href="#">Inicio</a></li>
+                            <li class="active">About us</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /BREADCRUMB -->
+
+        <!-- SECTION -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+                    <div class="col-md-7">
+                        <!-- Billing Details -->
+                        <div class="billing-details">
+                            <h:form>
+                                <div class="section-title">
+                                    <h3 class="title">¡Contactanos!</h3>
+                                </div>
+                                <div class="form-group">
+                                    <p:inputText class="input" value="#{mensajeDto.nombre}" placeholder="Nombres"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:inputText class="input" value="#{mensajeDto.apellido}" placeholder="Apellidos"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:inputText class="input" value="#{mensajeDto.email}" placeholder="Correo"></p:inputText>
+                                </div>
+                                <div class="form-group">
+                                    <p:inputText class="input" value="#{mensajeDto.motivo}" placeholder="Motivo"></p:inputText>
+                                </div>
+                                <!-- Order notes -->
+                                <div class="order-notes">
+                                    <p:inputTextarea class="input" value="#{mensajeDto.texto}" placeholder="Descripción del mensaje"></p:inputTextarea>
+                                </div>
+                                <br/>
+                                <div class="input-checkbox">
+                                    <input type="checkbox" id="terms"/>
+                                    <label for="terms">
+                                        <span></span>
+                                        He leído y acepto los <a href="privacity.xhtml">terminos y condiciones</a>
+                                    </label>
+                                </div>
+                                <br/>
+                                <h:commandButton value="Enviar mensaje" action="#{contactoBean.service.mensajeINS(mensajeDto)}" styleClass="primary-btn order-submit">
+                                </h:commandButton>
+                            </h:form>
+                        </div>
+                        <!-- /Billing Details -->
+
+
+                        <!-- /Order notes -->
+                    </div>
+
+                    <!-- Order Details -->
+                    <div class="col-md-5 order-details">
+                        <div class="section-title text-center">
+                            <h3 class="title">¿Quienes somos?</h3>
+                        </div>
+                        <div class="order-summary">
+                            <div class="order-products">
+                                ¡Bienvenido a ALLVINTAGE, tu destino en línea para equipos de venta de ropa vintage de primera calidad! En nuestra tienda ecommerce, encontrarás una amplia gama de productos de última generación, cuidadosamente seleccionados para satisfacer tus necesidades.
+                                En ALLVINTAGE, nuestra pasión por la ropa se refleja en cada detalle, permitiéndonos ofrecerte los productos más innovadores y de calidad garantizada. ¡Explora nuestro catálogo ahora y déjate sorprender por las mejores ofertas de ropa vintage que solo encontrarás aquí!
+                            </div>
+                            <div class="order-col">
+                                <div>Teléfono: </div>
+                                <div><strong>+51 935-600-844</strong></div>
+                            </div>
+                            <div class="order-col">
+                                <div>Email: </div>
+                                <div><strong>allvintage@gmail.com</strong></div>
+                            </div>
+                            <div class="order-col">
+                                <div>Dirección </div>
+                                <div><strong>Av. Santa Rosa</strong></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /Order Details -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /SECTION -->
+
+    </ui:define></ui:composition>
